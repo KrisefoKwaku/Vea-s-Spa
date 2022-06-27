@@ -30,6 +30,10 @@
       href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
       rel="stylesheet"
     />
+    <!-- WhatsApp Chat Customization -->
+    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/floating-wpp.min.js"></script>
+    <link rel="stylesheet" href="/css/floating-wpp.min.css" />
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
@@ -124,7 +128,7 @@
     <!-- Header Start -->
     <div
       class="jumbotron jumbotron-fluid bg-jumbotron"
-      style="background-image: url(/img/appointment.webp);margin-bottom: 90px"
+      style="background-image: url(/img/appointment.webp); margin-bottom: 90px"
     >
       <div class="container text-center py-5">
         <h3 class="text-white display-3 mb-4">Appointment</h3>
@@ -150,98 +154,100 @@
             <h1 class="mb-5">Make An Appointment</h1>
           </div>
         </div>
-              <div class="row justify-content-center bg-appointment mx-0">
-        <div class="col-lg-6 py-5">
-          <div class="p-5 my-5" style="background: rgba(33, 30, 28, 0.7)">
-            <h1 class="text-white text-center mb-4">Book Appointment</h1>
-            <form>
-              <div class="form-row">
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control bg-transparent p-4"
-                      required="required"
-                    />
-                    <label for="name" class="input-label">Your Name</label>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <input
-                      type="tel"
-                      class="form-control bg-transparent p-4"
-                      pattern="[0-9]{10}"
-                      required
-                    />
-                    <label for="tel" class="input-label">Telephone No. </label>
-                  </div>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <div class="date" id="date" data-target-input="nearest">
+        <div class="row justify-content-center bg-appointment mx-0">
+          <div class="col-lg-6 py-5">
+            <div class="p-5 my-5" style="background: rgba(33, 30, 28, 0.7)">
+              <h1 class="text-white text-center mb-4">Book Appointment</h1>
+              <form>
+                <div class="form-row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
                       <input
                         type="text"
-                        class="form-control bg-transparent p-4 datetimepicker-input"
-                        placeholder="Select Date"
-                        data-target="#date"
-                        data-toggle="datetimepicker"
+                        class="form-control bg-transparent p-4"
+                        required="required"
                       />
+                      <label for="name" class="input-label">Your Name</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input
+                        type="tel"
+                        class="form-control bg-transparent p-4"
+                        pattern="[0-9]{10}"
+                        required
+                      />
+                      <label for="tel" class="input-label"
+                        >Telephone No.
+                      </label>
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <div class="time" id="time" data-target-input="nearest">
-                      <input
-                        type="text"
-                        class="form-control bg-transparent p-4 datetimepicker-input"
-                        placeholder="Select Time"
-                        data-target="#time"
-                        data-toggle="datetimepicker"
-                      />
+                <div class="form-row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <div class="date" id="date" data-target-input="nearest">
+                        <input
+                          type="text"
+                          class="form-control bg-transparent p-4 datetimepicker-input"
+                          placeholder="Select Date"
+                          data-target="#date"
+                          data-toggle="datetimepicker"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <div class="time" id="time" data-target-input="nearest">
+                        <input
+                          type="text"
+                          class="form-control bg-transparent p-4 datetimepicker-input"
+                          placeholder="Select Time"
+                          data-target="#time"
+                          data-toggle="datetimepicker"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="form-row">
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <select
-                      class="custom-select bg-transparent px-4"
+                <div class="form-row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <select
+                        class="custom-select bg-transparent px-4"
+                        style="height: 47px"
+                      >
+                        <option selected disabled>Select A Service</option>
+                        <option value="1">Swedish Massage</option>
+                        <option value="2">Pedicure Only</option>
+                        <option value="3">Manicure Only</option>
+                        <option value="3">Pedicure & Manicure</option>
+                        <option value="3">Facial Therapy</option>
+                        <option value="3">Foot Soak</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <button
+                      class="btn btn-primary btn-block"
+                      type="submit"
                       style="height: 47px"
                     >
-                      <option selected disabled>Select A Service</option>
-                      <option value="1">Swedish Massage</option>
-                      <option value="2">Pedicure Only</option>
-                      <option value="3">Manicure Only</option>
-                      <option value="3">Pedicure & Manicure</option>
-                      <option value="3">Facial Therapy</option>
-                      <option value="3">Foot Soak</option>
-                    </select>
+                      Book Appointment
+                    </button>
                   </div>
                 </div>
-                <div class="col-sm-6">
-                  <button
-                    class="btn btn-primary btn-block"
-                    type="submit"
-                    style="height: 47px"
-                  >
-                    Book Appointment
-                  </button>
-                </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </div>
     <!-- Appointment End -->
 
-        <!-- Open Hours Start -->
+    <!-- Open Hours Start -->
     <div class="container-fluid py-5">
       <div class="container py-5">
         <div class="row">
@@ -418,7 +424,8 @@
         <div class="row">
           <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
             <p class="m-0 text-white">
-              &copy; <a href="#">Vea's Spa & Wellness</a> || All Rights Reserved 2022
+              &copy; <a href="#">Vea's Spa & Wellness</a> || All Rights Reserved
+              2022
             </p>
           </div>
           <div class="col-md-6 text-center text-md-right">
@@ -436,6 +443,27 @@
     <a href="#" class="btn btn-lg btn-primary back-to-top"
       ><i class="fa fa-angle-double-up"></i
     ></a>
+
+    <!-- WhatsApp Me Start -->
+    <div id="myButton" class="floating-wpp">
+      <div
+        class="floating-wpp-button"
+        style="
+          width: 72px;
+          height: 72px;
+          background-color: rgba(20, 220, 20, 0);
+        "
+      >
+        <a
+          href="https://wa.me/233593103793?text=Hello.%20I&#x27;d%20like%20to%20book%20an%20appointment%20"
+          target="blank"
+        >
+          <img src="/img/whatsapp icon.png" />
+        </a>
+        <div class="floating-wpp-button-image"></div>
+      </div>
+    </div>
+    <!-- WhatsApp Me End -->
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
