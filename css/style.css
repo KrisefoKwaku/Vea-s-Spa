@@ -9295,7 +9295,7 @@ button.bg-dark:focus {
 
 .text-primary {
   color: var(--danger) !important;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 a.text-primary:hover, a.text-primary:focus {
