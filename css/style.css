@@ -4036,7 +4036,7 @@ input[type="button"].btn-block {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 0.5rem;
+  padding: .5rem 0.2rem;
 }
 
 .navbar .container,
