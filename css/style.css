@@ -536,6 +536,12 @@ mark,
   height: auto;
 }
 
+.col-lg-6 .img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -3378,6 +3384,7 @@ input[type="button"].btn-block {
   width: 1%;
   min-width: 0;
   margin-bottom: 0;
+  border-radius: 15px 0 0 15px;
 }
 
 .input-group > .form-control + .form-control,
@@ -4036,7 +4043,7 @@ input[type="button"].btn-block {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: .5rem 0.2rem;
+  padding: 1.5rem 1rem;
 }
 
 .navbar .container,
@@ -4096,7 +4103,7 @@ input[type="button"].btn-block {
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
-  border: 1px solid transparent;
+  border: 0px solid transparent;
 }
 
 .navbar-toggler:hover, .navbar-toggler:focus {
@@ -9656,7 +9663,6 @@ h6,
   position: relative;
   z-index: 1;
   border-radius: 15px 15px 0 0 ;
-
 }
 
 .team .team-text {
@@ -9730,6 +9736,8 @@ h6,
     top: 0;
     left: 50%;
     background: rgba(255, 255, 255, 0.15);
+    background: fixed ;
+
   }
 }
 
