@@ -9655,6 +9655,8 @@ h6,
 .team img {
   position: relative;
   z-index: 1;
+  border-radius: 15px 15px 0 0 ;
+
 }
 
 .team .team-text {
